@@ -17,3 +17,15 @@ message_length = 0
 for d in data:
 	message_length = message_length + len(d)
 print('the next message_length us ', message_length)
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('there are total ',len(new), 'messages less than 100 words')		
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('there are total ',len(good), 'messages that is good')		
